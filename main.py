@@ -96,3 +96,65 @@ accuracy = (correct / len(practice_data)) * 100
 
 print("Correct predictions:", correct)
 print("Accuracy:", accuracy, "%")
+
+
+def learn_scores(data):
+    scores = {}
+
+    for sentence, mood in data:
+
+        words = sentence.lower().split()
+
+        for word in words:
+
+            if word not in scores:
+                scores[word] = 0
+
+            if mood == "Happy":
+                scores[word] += 1
+
+            elif mood == "Sad":
+                scores[word] -= 1
+
+    return scores
+
+word_scores = learn_scores(train_data)
+
+print("\nBONUS: LEARNED WORD SCORES")
+print(word_scores)
+
+def guess_mood_learned(sentence):
+
+    total_score = 0
+
+    words = sentence.lower().split()
+
+    for word in words:
+        total_score += word_scores.get(word, 0)
+
+    if total_score > 0:
+        return "Happy"
+    else:
+        return "Sad"
+
+
+
+print("\nBONUS: LEARNED MOOD PREDICTIONS")
+
+correct_learned = 0
+
+for sentence, actual_mood in practice_data:
+
+    predicted_mood = guess_mood_learned(sentence)
+
+    print("Sentence:", sentence)
+    print("Actual mood:", actual_mood)
+    print("Predicted mood:", predicted_mood)
+
+    if predicted_mood == actual_mood:
+        correct_learned += 1
+
+accuracy_learned = (correct_learned / len(practice_data)) * 100
+
+print("Correct predictions:", correct_learned)
+print("Learned model accuracy:", accuracy_learned, "%")
