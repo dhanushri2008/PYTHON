@@ -32,4 +32,4 @@ Through this project, I learned about Python functions, loops, lists, tuples, di
 ## Optional Bonus – Voice Note
 
 Voice note explaining my guess_mood() function:
-https://1drv.ms/v/c/fbcb3c538efd0724/IQCmNL5xrTO-T6BXzR3C8FZ6AQ-Eyz_Rvo6vrIa6nKlWj-8?e=CqaJKI
+https://drive.google.com/file/d/124myvac_gRZFVv1M98j-dWPZhTjsq-Lg/view?usp=drive_link
