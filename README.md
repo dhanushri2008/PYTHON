@@ -28,3 +28,8 @@ I used ChatGPT as an AI learning assistant to understand Python concepts and cla
 
 ## Reflection
 Through this project, I learned about Python functions, loops, lists, tuples, dictionaries, word scoring, and basic mood prediction.
+
+## Optional Bonus – Voice Note
+
+Voice note explaining my guess_mood() function:
+https://1drv.ms/v/c/fbcb3c538efd0724/IQCmNL5xrTO-T6BXzR3C8FZ6AQ-Eyz_Rvo6vrIa6nKlWj-8?e=CqaJKI
